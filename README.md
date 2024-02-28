@@ -36,4 +36,4 @@
 
 [Tuan19](contents/Tuan19/Tuan19.md)
 
-[Tuan20](contents/Tuan20/Tuan20.md)
+[Tuan20](contents/Tuan20/Tuan20.md)# Tech
