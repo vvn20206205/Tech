@@ -28,11 +28,14 @@ I can use font-end framework like: React, Vue, Angular.
 
 I have knowledge about design, deploy and management microservices architecture.
 
-<!-- In addition, I also have knowledge about  -->
-<!-- Docker container -->
-<!-- Message queue: Kafka, RabbitMQ -->
-<!-- and version control systems such as: Git (GitHub, GitLab, ...) -->
+In addition, I also have knowledge about
+Docker container
+Message queue: Kafka, RabbitMQ
+and version control systems such as: Git (GitHub, GitLab, ...)
 
+<!--  -->
+
+I have a project called xxx used for yyy
 • einvoice-system: support system for taxpayers to manage electronic invoices
 
 <!--  -->
