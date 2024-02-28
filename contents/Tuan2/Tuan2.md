@@ -3,34 +3,16 @@ https://www.overleaf.com/project/65dd8bdb9043debbd1de0ea7
 
 
 
-Xin chào mọi người,
-
-```
 Hi everyone,
-```
-
-Tôi tên là Vũ Văn Nghĩa,
-
-```
 My name is Vu Van Nghia,
-```
 
-Tôi sinh ngày 04/05/2002
 
-```
-My date of birth is May 4, 2002,
-```
 
-Tôi đến từ tỉnh Hải Dương
-
-```
-I come from Hai Duong province
-```
-
-Tôi đang học ở FaMI HUST
-
-```
 Currently, I am studying at Hanoi University of Science and Technology.
+
+
+
+
 ```
 
 Đây là thông tin liên lạc của tôi như email, số điện thoại, github
