@@ -5,13 +5,9 @@ My name is Vu Van Nghia,
 
 <!--  -->
 
-Today, I
+Today, I want to present my CV to all of you.
 
-will
-
-want to
-
-present my CV to all of you. This CV is used to apply for "Fullstack developer intern"
+This CV is used to apply for "Fullstack developer intern"
 
 <!--  -->
 
