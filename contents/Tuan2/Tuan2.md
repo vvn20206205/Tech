@@ -2,18 +2,27 @@
 Hi everyone,
 My name is Vu Van Nghia,
 <!--  -->
-Today I will present my CV
-Today I want to present my CV
+Today, I 
 
 
-This CV is used to apply for "Fullstack developer intern"
+
+will 
+
+want to 
+
+present my CV  to all of you. This CV is used to apply for "Fullstack developer intern"
+
+ 
+
+
+
+
 <!--  -->
 
 Currently, I am studying at Hanoi University of Science and Technology.
 
-This is my contact information such as email, phone number, github llink
-
 <!--  -->
+<!-- This is my contact information such as email, phone number, github llink -->
 This is my contact information such as email, phone number, github
 I'm happy to connect and share with everyone!
 <!--  -->
