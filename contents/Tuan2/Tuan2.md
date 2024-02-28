@@ -20,27 +20,20 @@ This is my contact information such as email, phone number, fb and github link.
 
 These are my skills:
 
-I know basic programming languages such as: C, C++, C Sharp, Python, JavaScript.
+I know basic programming languages such as: C, C++, C Sharp, Python, JavaScript
 
-<!-- An sql -->
+and SQL.
 
-I have knowledge about deploy and management microservices architecture.
+I can use font-end framework like: React, Vue, Angular.
 
-Ngoài ra, tôi còn có kiến thức về container: Docker và version control systems: Git (GitHub, GitLab, ...)
+I have knowledge about design, deploy and management microservices architecture.
 
-In addition, I also have knowledge about Docker containers and version control systems such as: Git (GitHub, GitLab, ...)
+<!-- In addition, I also have knowledge about  -->
+<!-- Docker container -->
+<!-- Message queue: Kafka, RabbitMQ -->
+<!-- and version control systems such as: Git (GitHub, GitLab, ...) -->
 
-<!--  -->
-
-<!-- I have using fontend.. -->
-
-In addition, I also have knowledge about
-
-Mq kafka
-
-Docker containers
-
-and version control systems such as: Git (GitHub, GitLab, ...)
+• einvoice-system: support system for taxpayers to manage electronic invoices
 
 <!--  -->
 
