@@ -35,8 +35,8 @@ and version control systems such as: Git (GitHub, GitLab, ...)
 
 <!--  -->
 
-I have a project called xxx used for yyy
-• einvoice-system: support system for taxpayers to manage electronic invoices
+I have a project called “einvoice-system”.
+This system supports taxpayers in management electronic invoices.
 
 <!--  -->
 
