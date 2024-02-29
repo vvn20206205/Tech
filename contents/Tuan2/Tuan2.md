@@ -1,6 +1,4 @@
-<!-- https://www.overleaf.com/project/65dd8bdb9043debbd1de0ea7 -->
 
-#
 
 ```
 Hello everyone, My name is VVN.
@@ -27,7 +25,7 @@ These are my skills:
 ```
 
 ```
-I know basic programming languages such as: C, C++, C Sharp, Python, JavaScript
+I know basic programming languages such as: C, Cpp, C Sharp, Python, JavaScript
 
 and SQL.
 ```
