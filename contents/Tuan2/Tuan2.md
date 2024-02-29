@@ -1,4 +1,5 @@
 <!-- https://www.overleaf.com/project/65dd8bdb9043debbd1de0ea7 -->
+
 ```
 Hi everyone, My name is VVN.
 
@@ -30,8 +31,9 @@ I have knowledge about design, deploy and management microservices architecture.
 
 In addition, I also have knowledge about
 Docker container
-Message queue: Kafka, RabbitMQ
+Message queue like: Kafka, RabbitMQ
 and version control systems such as: Git (GitHub, GitLab, ...)
+
 
 <!--  -->
 
@@ -43,3 +45,4 @@ This system supports taxpayers in management electronic invoices.
 I am very happy to meet and share with everyone today.
 
 Thank you for listening.
+```
