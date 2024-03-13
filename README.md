@@ -1,3 +1,7 @@
+[survey](contents/survey/survey.md)
+
+   
+
 [Tuan1](contents/Tuan1/Tuan1.md)
 
 [Tuan2](contents/Tuan2/Tuan2.md)
