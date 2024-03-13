@@ -1,0 +1,66 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \documentclass{article}
+% \documentclass[12pt]{article}
+\documentclass[twocolumn]{article}
+% Dùng để thêm hình ảnh
+\usepackage{graphicx}
+% Dùng để di chuyển các tham chiếu
+\usepackage{hyperref}
+% Dùng để tạo văn bản ngẫu nhiên
+\usepackage{lipsum}
+% Dùng để cố định hình ảnh \begin{figure}[H]
+\usepackage{float}
+% Dùng để tài liệu tham khảo
+\usepackage{cite}
+
+% Dùng để sử dụng màu
+\usepackage{xcolor}
+\pagecolor[RGB]{40, 42, 54} % Đặt màu nền
+\color[RGB]{18, 161, 24} % Đặt màu chữ
+
+% Dùng để tạo keywords
+\providecommand{\keywords}[1]{\textbf{\textit{Keywords.}} #1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Tiêu đề
+\title{xxx\\(yyy)}
+% Tác giả
+\author{
+Mai Thanh Duy 20227225 \\
+Tran Duc Toan 20195929 \\
+Vu Van Nghia 20206205
+}
+\maketitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{contents/abstract.tex}
+
+\section{INTRODUCTION}
+\input{contents/INTRODUCTION.tex}
+
+% \section{METHODS}
+% \input{contents/METHODS.tex}
+
+% \section{RESULTS}
+% \input{contents/RESULTS.tex}
+
+% \section{DISCUSSION}
+% \input{contents/DISCUSSION.tex}
+
+% \section{CONCLUSION}
+% \input{contents/CONCLUSION.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+
+
+\renewcommand{\refname}{REFERENCES}
+\bibliographystyle{plain}
+\bibliography{References} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{USING \LaTeX}
+\input{contents/USING_LaTeX.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document} % Kết thúc
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% tạo nhiều gamil
