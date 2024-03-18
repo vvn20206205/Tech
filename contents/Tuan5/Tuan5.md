@@ -1,6 +1,10 @@
-<!--! II. Security and Privacy challenges -->
+<!-- ! -->
+II. Security and Privacy challenges
+<!-- ! -->
 In this section, we investigate the specific security and privacy challenges in cloud computing which require the development of advanced security technologies.
-<!--! A. Loss of Control -->
+<!-- ! -->
+A. Loss of Control
+<!-- ! -->
 
 
 
