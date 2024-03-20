@@ -62,8 +62,10 @@ In this section, we investigate the specific security and privacy challenges in 
 
 A “threat” is an act of coercion of a potential attack to elicit negative response. It is generally an effect that can be described as anything that would tamper, destruct or interrupt of any service or item of value. The term “risk” refers to the possibility of being targeted by an attack, getting success and exposed by the attack. The term “vulnerability” refers to the security flaws in a system that allows an attack to be successful . In general, the threats exploit the vulnerabilities of a system, which leads to risk by damaging assets and causing exposure. However, threats can be identified in order to mitigate risks and countermeasure for vulnerabilities.
 ``` 
+
 A. Loss of control
 1) Data Loss and Data Theft
+
 Data loss and data breaches were recognized as the top threats in cloud computing environments 
 ``` 
 in 2013. A recent survey shows that 63% of customers would be less likely to purchase a cloud service if the cloud vendor reported a material data breach involving the loss or theft of sensitive or confidential personal information.
@@ -85,6 +87,7 @@ Data theft: In a multitenant infrastructure, if cloud service database has error
 Offline backups of data to avoid catastrophic data loss will also increase the chance of exposure to data breache[7].
 ``` 
 2) Data storage and tranmission through regional norms
+
 Due to the distributed infrastructure of the cloud, cloud users’ data may be stored on data centers geographically located in multiple legal jurisdictions, leading to cloud users’ concerns about the legal reach of local regulations on data stored out of region.
 ``` 
 
@@ -92,6 +95,7 @@ Due to the distributed infrastructure of the cloud, cloud users’ data may be s
 Furthermore, the local laws may be violated since the dynamic nature of the cloud makes it extremely difficult to designate a specific server or device to be used for transborder data transmission [9].
 ``` 
 3) Cheap Data Leakage and Analysis
+
 The rapid development of cloud computing has facilitated the generation of big data, leading to cheap data collections and analysis. For example, many popular online social media sites, such as Facebook, Twitter and LinkedIn, are utilizing the cloud computing technology to store and process their customers’ data.
 ``` 
 
@@ -169,6 +173,7 @@ The cloud utilizing organization has to remove or disable accounts of the ex-emp
 
 ``` 
 C.Virtual Machine Related Challenges
+
 Virtualization refers to the logical abstraction of computing resources from physical constraints. One representative example of virtualization technology is the virtual machine
 ``` 
 (VM). Virtualization can also be performed on many other computing resources, such as operating system, networks, memory, and storage. In a virtualized environment, computing resources can be dynamically created, expanded, shrunk or moved according to users’ demand, which greatly improves agility and flexibility, reduces costs and enhances business values for cloud computing. 
@@ -183,6 +188,7 @@ Despite of its substantial benefits, this technology also introduces security an
 
 ``` 
 1- Security threats sourced from host 
+
 Monitoring VMs from host The control point in virtual environment is the host machine there are implications that allow the host to monitor and communicate with VM applications up running.
 ``` 
 
@@ -195,6 +201,7 @@ Communications between VMs and host The data transfer between VMs and the host f
 
 ``` 
 The host can influence the VMs in the following ways[6]: 
+
 • The host can Start, shutdown, pause, and restart VMs.
 • Monitoring and configuration of resources which are available to the VMs, these include: CPU, memory, disk, and network usage of VMs. 
 • Adjust the number of CPUs, the amount of memory, the amount and number of virtual disks, and a number of virtual network interfaces which are available to a VM.
@@ -204,6 +211,7 @@ The host can influence the VMs in the following ways[6]:
 
 ``` 
 2- Security threats sourced from other VM 
+
 Monitoring VMs from other VM Monitoring VMs could violate security and privacy,
 ``` 
 
@@ -238,6 +246,7 @@ This happens when the number of requests that can be handled by a server exceeds
 
 ``` 
 D. Managerial Issues
+
 Most cloud-specific security and privacy challenges have their own managerial aspect.
 ``` 
 
