@@ -1,6 +1,5 @@
-Nhóm em có thay đổi theo gợi ý, nhận xét của thầy.
-
-Nhóm em có kết hợp cả sáng tác và đồng thời trích dẫn tài liệu tham khảo.
+<!-- My group has changed according to the teacher's comments. -->
+<!-- My group combined both composing and citing reference materials. -->
 
 <!-- Thanks for listening -->
 <!-- My name is Vu Van Nghia -->
@@ -9,6 +8,7 @@ Nhóm em có kết hợp cả sáng tác và đồng thời trích dẫn tài li
 
 <!-- Abstract -->
 <!-- This survey paper gives an overview of cloud computing infrastructure, how cloud computing works, as well as how major companies around the world implement cloud computing transformation.  -->
+
 <!-- I. Introduction -->
 <!-- In recent years, cloud computing has emerged as a dominant paradigm in the realm of IT infrastructure, driven by a confluence of market forces and technological advancements.  -->
 
@@ -126,7 +126,7 @@ Authentication & Authorization:
   
    Therefore, it is more necessary to strictly protect the host machines than protecting distinctive VMs . VM-level protection is crucial in cloud computing environment. The enterprise can co-locate applications with different trust levels on the same host and can defend VMs in a shared multi-tenant environment. This enables enterprises to maximize the benefits of virtualization. VM-level protection allows VMs to stay secure in today’s dynamic data centers. Also, as VMs travel between different environments – from on-premise virtual servers to private clouds to public clouds, and even between cloud vendors[6]. 
  
-  Communications between VMs and host The data transfer between VMs and the host flow between VMs shared virtual resources; in fact the host can monitor the network traffic of its own hosted VMs. This can be considering useful features for attackers and they may use it such as shared clipboard which allows data to transfer between VMs and the host using cooperating malicious program in VMS . It is not generally considered a bug or limitation when one can initiate monitoring, change, or communication with a VM application from the host. The host environment needs to be more strictly secured than the individual VMs. 
+  Communications between VMs and host The data transfer between VMs and the host flow between VMs shared virtual resources; in fact the host can monitor the network traffic of its own hosted VMs. This can be considering useful features for attackers and they may use it such as shared clipboard which allows data to transfer between VMs and the host using cooperating malicious program in VMs . It is not generally considered a bug or limitation when one can initiate monitoring, change, or communication with a VM application from the host. The host environment needs to be more strictly secured than the individual VMs. 
   
   
   
@@ -143,17 +143,29 @@ Authentication & Authorization:
 
 
 
-  Monitoring VMs from other VM Monitoring VMs could violate security and privacy, but the new architecture of CPUs, integrated with a memory protection feature, could prevent security and privacy violation. A major reason for adopting virtualization is to isolate security tools from an untrusted VM by moving them to a separate trusted secure VM.
+  <!-- Monitoring VMs from other VM Monitoring VMs could violate security and privacy, -->
+  
+   but the new architecture of CPUs, integrated with a memory protection feature, could prevent security and privacy violation. A major reason for adopting virtualization is to isolate security tools from an untrusted VM by moving them to a separate trusted secure VM.
  
  
  
  
-  Communication between VMs One of the most critical threads that threaten exchanging information between virtual machines is how it's deployed. Sharing resources between VMs may strip security of each VM for instance collaboration using application such as shared clipboard that allow exchanging data between VMs and the host assisting malicious program in VMs, this situation violate security and privacy. Also, a malicious VM can has chance to access other VMs through shard memory .
+  <!-- Communication between VMs: One of the most critical threads that threaten exchanging information between virtual machines is how it's deployed.  -->
+  
+  
+  
+  Sharing resources between VMs may strip security of each VM for instance collaboration using application such as shared clipboard that allow exchanging data between VMs and the host assisting malicious program in VMs, this situation violate security and privacy.
+  
+  
+   Also, a malicious VM can has chance to access other VMs through shard memory .
 
 
 
 
-   Denial of Service (DoS): A DoS attack is a trying to denial services that provide to authorize users for example when trying to access site we see that due to overloading of the server with the requests to access the site, we are unable to access the site and observe an error. This happens when the number of requests that can be handled by a server exceeds its capacity, the Dos attack marking carting part of clouds inaccessible to the users. Usage of an Intrusion Detection System (IDS) one of the useful method of defense against this type of attacks.
+   <!-- Denial of Service (DoS): A DoS attack is a trying to denial services that provide to authorize users.    For example when trying to access site we see that due to overloading of the server with the requests to access the site, we are unable to access the site and observe an error. -->
+   
+   
+    This happens when the number of requests that can be handled by a server exceeds its capacity, the Dos attack marking carting part of clouds inaccessible to the users. Usage of an Intrusion Detection System (IDS) one of the useful method of defense against this type of attacks.
 
 <!--! D. Managerial Issues -->
 <!-- Most cloud-specific security and privacy challenges have their own managerial aspect. -->
