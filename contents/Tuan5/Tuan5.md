@@ -16,7 +16,7 @@ In recent years, cloud computing has emerged as a dominant paradigm in the realm
 ```
 
 ```
-In the previous part, my group presented Abstract and Introduction
+In the previous part, my group presented Abstract and Introduction.
 Today, I will continue to present part II. Security and Privacy challenges
 ```
 
