@@ -15,9 +15,10 @@
 [Tuan6](contents/Tuan6/Tuan6.md)
 
 <!-- TWP-report -->
+<!-- TWP-Slide6 -->
 
 
-Slide1
+
 
 [Tuan7](contents/Tuan7/Tuan7.md)
 

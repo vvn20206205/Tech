@@ -1,116 +1,474 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[twocolumn]{article}
-% Dùng để thêm hình ảnh
-\usepackage{graphicx}
-% Dùng để di chuyển các tham chiếu
-\usepackage{hyperref}
-% Dùng để tạo văn bản ngẫu nhiên
-\usepackage{lipsum}
-% Dùng để cố định hình ảnh \begin{figure}[H]
-\usepackage{float}
-% Dùng để tài liệu tham khảo
-\usepackage{cite}
-%
-\usepackage{tikz}
-%
-% Dùng để sử dụng màu
-\usepackage{xcolor}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \pagecolor[RGB]{40, 42, 54} % Đặt màu nền
-% \color[RGB]{18, 161, 24} % Đặt màu chữ
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-\usepackage{fancyhdr}
+% \documentclass[notheorems,hyperref={bookmarks=true}]{beamer}
+% \usepackage[framesassubsections]{beamerprosper}
+% \hypersetup{pdfpagemode=FullScreen}
+% \usepackage[utf8]{vietnam}
+% \usepackage{mdframed}
+% \usepackage[english]{babel}
+% \usepackage{ulem} %for underlying+
+% \usepackage{pifont} %for creating dingautolist
+% \usepackage[mathscr]{eucal}
+% \usepackage{amsfonts,amsmath, amsthm, amssymb,amsxtra,latexsym,amscd,graphics,graphpap}
+% \usepackage{indentfirst}
+% \usepackage{rotating}
+% \usepackage{graphicx}
+% \usepackage{amsbsy}
+% \usepackage{epsfig}
+% \usepackage{natbib}
+% \usepackage{cases} 
 
-% Dùng để tạo keywords
-\providecommand{\keywords}[1]{\textbf{\textit{Keywords.}} #1}
+% \usepackage{pdfpages}
+% \usepackage{multicol}
+% \usepackage{hyperref}
+% \usepackage{subfigure}
+% \usepackage{multimedia}
+% \usepackage{boxedminipage}
+% \usepackage{tikz}
+% \usepackage{nicefrac}
+% \setbeamertemplate{theorems}[numbered] % Đánh số định lý.
+% \usetheme{Boadilla} % puts title, section, etc on top
 
-%
-\definecolor{myblack}{RGB}{0, 0, 0}
-\newcommand{\myrect}{\tikz[baseline=(char.base)]{\node[anchor=text, rectangle, inner sep=5pt, fill=myblack, text=white] (char) {\normalfont\small SURVEY PAPER};}}
+% \usecolortheme{rose} 
+% \usefonttheme[onlylarge]{structurebold}
+% \usefonttheme{professionalfonts}
+% \setbeamercolor{title}{fg=red!80!black,bg=blue!20!white}
+% \setbeamertemplate{section in head/foot shaded}[default][20]
+% \setbeamertemplate{subsection in head/foot shaded}[default][20]
+% \setbeamertemplate{navigation symbols}{}
+% \setbeamertemplate{blocks}[rounded][shadow=true]
+% \setbeamerfont{small}{size=\small}
+% \setbeamerfont{footnote}{size=\footnotesize}
+% \setbeamerfont{script}{size=\scriptsize}
+% \setbeamerfont{tiny}{size=\tiny}
 
-% Redefine \maketitle to disable page numbering
-\let\oldmaketitle\maketitle
-\renewcommand{\maketitle}{
-\thispagestyle{empty}
-\oldmaketitle
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\pagestyle{fancy}
-\fancyhf{}
-% \renewcommand{\headrulewidth}{0pt} % Loại bỏ đường gạch ngang
-\lhead{\raisebox{-0.4\height}{\includegraphics[width=2cm]{pictures/MDPI.png}}}
-\rhead{\myrect}
+% \theoremstyle{plain}
+% \newcommand{\thedefinition}{\arabic{section}.\arabic{definition}}
+% \newcommand{\thelemma}{\arabic{section}.\arabic{lemma}}
+% \newcommand{\thetheorem}{\arabic{section}.\arabic{theorem}}
+% \renewcommand{\thetable}{\Roman{table}}
 
-% Thiết lập chân trang
-% \fancyfoot[L]{Copyright \textcopyright \the\year. Faculty of Applied Mathematics and Informatics}
-\fancyfoot[C]{\thepage} % Chân trang phải
-% \fancyfoot[R]{\thepage} % Chân trang phải
+% \mode<presentation>
+% \setbeamertemplate{navigation symbols}{} 
 
-% Thêm thanh ngang phía dưới chân trang
-\renewcommand{\footrulewidth}{0.4pt}
-\renewcommand{\footruleskip}{0mm}
-\renewcommand{\footrule}{\hbox to\headwidth{\color{black}\leaders\hrule height \footrulewidth\hfill}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{document}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Tiêu đề
-\title{A Survey of Security and Privacy in Cloud Computing: Challenges, Solutions and Future Directions}
-% Tác giả
-\author{
-    Mai Thanh Duy \textsuperscript{*} 20227225 \\
-    Tran Duc Toan 20195929 \\
-    Vu Van Nghia 20206205
-}
+% \usepackage{wrapfig}
+% \usepackage{multicol}
+% %\setbeamertemplate{footline}{\raisebox{-2.2ex}{\pgfuseimage{logo.png}}}
+
+% \title[{\makebox[.15\paperwidth]{Cloud Security}}]{A Survey of Security and Privacy in Cloud Computing: Challenges, Solutions and Future Directions } 
+% \author[Group 5]{Group 5
+% \\Mai Thanh Duy{*} - 20227225\\
+% \\Tran Duc Toan 20195929\\
+% Vu Van Nghia 20206205 \\
+% Instructors:  PGS. Nguyen Dinh Han} 
+    
+% \date{\today}
+
+% \renewcommand{\sfdefault}{cmss}
+% \renewcommand{\rmdefault}{cmr}
+% \renewcommand{\ttdefault}{cmtt}
+% \numberwithin{equation}{section}
+% \usepackage{array}
+% \usepackage{ragged2e}
+% \justifying
+% \usepackage{blindtext}
+% \usepackage{geometry}
+%  \geometry{
+% right = 5.5mm
+%  }
+% \renewcommand{\baselinestretch}{1.15}
+% \setlength{\parindent}{1.5em}
+% %\setlength{\parskip}{1em}
+% \DeclareMathOperator*{\argmin}{arg\,min}
+% \newtheorem{prop}{Proposition}
+% \usepackage{amsmath}
+% \newtheorem{definition}{Definition}
+% \newtheorem{theorem}{Theorem}
+% \newtheorem{corollary}{Corollary}
+% \newtheorem{hypothesis}{Hypothesis}
+% \usepackage{esvect}
+% \usepackage{booktabs}
+% \usepackage{multirow}
+% \begin{document}
+% 	\begin{footnotesize}
+%   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 		\begin{frame}
+
+% 			\frametitle{}
+% 			\maketitle
+% 			%	\begin{block}
+% 			%	\titlepage
+% 			%	\end{block}
+% 		\end{frame}		
+%   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 		\AtBeginSection[] % Do nothing for \section*
+% 		{
+% 			\begin{frame}<beamer>
+% 				\frametitle{Outline}
+% 				\tableofcontents[currentsection, currentsubsection]
+% 			\end{frame}
+% 		}
+%   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Giới thiệu bài toán}
+% \subsection{Giới thiệu bài toán 1}
+% abstract
 
 
-\date{}
 
-\maketitle
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{abstract}
-
-    \lipsum[1]
-\end{abstract}
-
-\keywords{xxx, xxx, yyy, xxx, xxx, xxx, yyy}
-
-\section{INTRODUCTION}
-
-\lipsum[1]
+%   As organizations increasingly transition critical operations to the cloud, ensuring strong security measures becomes paramount. However, the evolving threat landscape poses significant challenges as cyber adversaries continually devise sophisticated tactics to exploit vulnerabilities in cloud infrastructure. This survey paper gives an overview of cloud computing infrastructure, how cloud computing works, as well as how major companies around the world implement cloud computing transformation. The article also provides in-depth analysis of the current threats facing cloud security, from data breaches and insider threats to sophisticated attacks and vulnerabilities in the supply chain. By examining real-world case studies and industry reports, we identify key vulnerabilities that leave cloud environments at risk of exploitation. Furthermore, this article includes the security options offered by the major vendors, thereby exploring the emerging trends and technologies that are shaping the future of cloud security. Additionally, we discuss the role of automation, orchestration, and artificial intelligence in enhancing threat detection and response in the cloud.
 
 
-\section{METHODS}
+%   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
 
-\lipsum[1]
+ 
+% % 	% \begin{frame}{Frame Title}
+% % 	% \frametitle{Tầm quan trọng của việc dự báo doanh thu}
+% %  %    \begin{itemize}
+% %  %        \item Giúp đưa ra định hướng chiến lược phát triển cho công ty mình.
+% %  %        \item Đưa ra chiến lược để có thể cạnh tranh với công ty đối thủ.
+% %  %        \item Dự báo giúp công ty có thể chuẩn bị tốt nhất kế hoạch cho ngắn hạn và dài hạn.
+% %  %    \end{itemize}
+% %  %    \end{frame}
+    
+     
+      
+% %     \begin{frame}{Cấu trúc lặp của RNN vs LSTM}
+% %         \begin{figure}[H]
+% %     \centering
+% %     \includegraphics[width=0.65\textwidth]{Figures/LSTM3-SimpleRNN.png}
+% %     \caption{The repeating module in a standard RNN contains a single layer.}
+% %     \end{figure}
+% %     \begin{figure}[H]
+% %     \centering
+% %     \includegraphics[width=0.65\textwidth]{Figures/LSTM3-chain.png}
+% %     \caption{The repeating module in an LSTM contains four interacting layers.}
+% %     \end{figure}
+% %     \end{frame}
+% %     \begin{frame}{Trạng thái tế bào (Cell state)}
+% %         \begin{figure}[H]
+% %         \centering
+% %         \includegraphics[width=0.45\textwidth]{Figures/LSTM3-C-line.png}
+% %         \caption{Cell state in LSTM.}
+% %         \label{fig:cell_state}
+% %         \end{figure}
+% %         \par
+% % Trạng thái tế bào là một dạng giống như băng truyền. Nó chạy xuyên suốt tất cả các mắt xích (các nút mạng) và chỉ tương tác tuyến tính đôi chút. Vì vậy mà các thông tin có thể dễ dàng truyền đi thông suốt mà không sợ bị thay đổi.\par
+% % LSTM có khả năng bỏ đi hoặc thêm vào các thông tin cần thiết cho trạng thái tế báo, chúng được điều chỉnh cẩn thận bởi các nhóm được gọi là cổng (gate).\par
+% % Một LSTM gồm có 3 cổng như vậy để duy trì và điều hành trạng thái của tế bào.
+% %     \end{frame}
+% %     \begin{frame}{Tầng sigmoid}
+% %         \begin{minipage}{0.4\textwidth}% adapt widths of minipages to your needs
+% % \centering
+% % 	\includegraphics[width=0.3\textwidth]{Figures/LSTM3-gate.png}
+% % 	%\captionof{figure}[Tầng Sigmoid]{Tầng Sigmoid.}
+% % \end{minipage}%
+% % \hfill%
+% % \begin{minipage}{0.4\textwidth}%\RaggedRight
+	
+% %     \begin{align}
+% %     	\sigma (x) = \frac{1}{1+e^{-x}}
+% %     \end{align}
+% % \end{minipage}
+% % Tầng sigmoid sẽ cho đầu ra là một số trong khoản $[0, 1]$, mô tả có bao nhiêu thông tin có thể được thông qua. Khi đầu ra là $0$ thì có nghĩa là không cho thông tin nào qua cả, còn khi là $1$ thì có nghĩa là cho tất cả các thông tin đi qua nó.
+% %     \end{frame}
+% % \begin{frame}{Tầng cổng quên}
+% %     \begin{minipage}{0.4\textwidth}% adapt widths of minipages to your needs
+% % \centering
+% % 	\includegraphics[width=\linewidth]{Figures/LSTM3-focus-f.png}
+% % 	%\captionof{figure}[Tầng cổng quên]{Tầng cổng quên.}
+% % \end{minipage}%
+% % \hfill%
+% % \begin{minipage}{0.4\textwidth}
+% % 	\centering
+% %     \begin{align}
+% %     	f_t = \sigma (W_f \cdot [h_{t-1}, x_t] + b_f)
+% %     \end{align}
+% % \end{minipage}
+% % \par Tầng cổng quên quyết định xem thông tin nào cần bỏ đi từ trạng thái tế bào.
+% % \end{frame}
+% % \begin{frame}{Tầng cổng vào}
+% %     \begin{minipage}{0.4\textwidth}% adapt widths of minipages to your needs
+% % \centering
+% % 	\includegraphics[width=\linewidth]{Figures/LSTM3-focus-i.png}
+% % 	%\captionof{figure}[Tầng cổng vào]{Tầng cổng vào.}
+% % \end{minipage}%
+% % \hfill%
+% % \begin{minipage}{0.4\textwidth}
+% % 	\centering
+% %     \begin{align}
+% %     	i_t = \sigma (W_i \cdot [h_{t-1}, x_t] + b_i)
+% %     \end{align}
+% %     \begin{align}
+% %     	\tilde{C_t} = \tanh (W_C \cdot [h_{t-1}, x_t] + b_C)
+% %     \end{align}
+% % \end{minipage}
+% % \par Tầng cổng vào  quyết định xem thông tin mới nào ta sẽ lưu vào trạng thái tế bào. 
+% % \end{frame}
+% % \begin{frame}{Cập nhật trạng thái tế bào}
+% %     \begin{minipage}{0.4\textwidth}% adapt widths of minipages to your needs
+% % \centering
+% % 	\includegraphics[width=\linewidth]{Figures/LSTM3-focus-C.png}
+% % 	%s\captionof{figure}[Cập nhật trạng thái tế bào]{Cập nhật trạng thái tế bào.}
+% % \end{minipage}%
+% % \hfill%
+% % \begin{minipage}{0.4\textwidth}
+% % 	\centering
+% %     \begin{align}
+% %     	C_t = f_t * C_{t-1} + i_t * \tilde{C_t}
+% %     \end{align}
+% % \end{minipage}
+% % \end{frame}
+% %     \begin{frame}{Cổng ra}
+% %         \begin{minipage}{0.4\textwidth}% adapt widths of minipages to your needs
+% % \centering
+% % 	\includegraphics[width=\linewidth]{Figures/LSTM3-focus-o.png}
+% % 	%\captionof{figure}[Cổng ra]{Cổng ra.}
+% % \end{minipage}%
+% % \hfill%
+% % \begin{minipage}{0.4\textwidth}
+% % 	\centering
+% %     \begin{align}
+% %     	o_t = \sigma (W_o [h_{t-1}, x_t] + b_o)
+% %     \end{align}
+% %     \begin{align}
+% %     	h_t = o_t * \tanh (C_t)
+% %     \end{align}
+% % \end{minipage}
+% % \par
+% % Cuối cùng, ta cần quyết định xem ta muốn đầu ra là gì. Giá trị đầu ra sẽ dựa vào trạng thái tế bào, nhưng sẽ được tiếp tục sàng lọc.
+% %     \end{frame}
+% %     \begin{frame}{Lan truyền ngược trong LSTM}
+% %         \begin{figure}[H]
+% %     \centering
+% %     \includegraphics[width=0.75\textwidth]{Figures/LSTM_lantruyennguoc.png}
+% %     \caption[Các hoạt động của một LSTM dưới dạng một đồ thị tính toán]{Các hoạt động của một LSTM dưới dạng một đồ thị tính toán.}
+% % \end{figure}
+% %     \end{frame}
+% %     \begin{frame}{Lan truyền ngược trong LSTM}
+% %         Chúng ta hãy bắt đầu với một ma trận trọng số đơn để làm ví dụ minh họa. Xem xét ma trận trọng số $W_o$, chúng ta đạt được gradient sau đây.
+% % \begin{align}
+% % \begin{split}
+% %     \frac{\partial \mathcal{L}}{\partial W_o} &= \frac{\partial \mathcal{L}}{\partial \hat{y}}\frac{\partial \hat{y}}{\partial h_T}\frac{\partial h_T}{\partial W_o}\\
+% %     &+ \frac{\partial \mathcal{L}}{\partial \hat{y}}\frac{\partial \hat{y}}{\partial h_T}\frac{\partial h_T}{\partial h_{T-1}}\frac{\partial h_{T-1}}{\partial W_o}\\
+% %     &+ \frac{\partial \mathcal{L}}{\partial \hat{y}}\frac{\partial \hat{y}}{\partial h_T}\frac{\partial h_T}{\partial C_T}\frac{\partial C_T}{\partial h_{T-1}}\frac{\partial h_{T-1}}{\partial W_o}\\
+% %     &+ \frac{\partial \mathcal{L}}{\partial \hat{y}}\frac{\partial \hat{y}}{\partial h_T}\frac{\partial h_T}{\partial h_{T-1}}\frac{\partial h_{T-1}}{\partial h_{T-2}}\frac{\partial h_{T-2}}{\partial W_o}\\
+% %     &+ ...
+% % \end{split}
+% % \end{align}
+% %     \end{frame}
+% % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % \section{Kết quả thực nghiệm}
+% % \begin{frame}{Mô hình LA}    
+% % \begin{figure}[H]
+% %     \centering
+% %     \includegraphics[scale=0.4]{image_LA/i3.png}
+% %     \caption{Xử lý dữ liệu đầu vào}
+% % \end{figure}
+% % \end{frame}
+
+% % \begin{frame}{Mô hình LA}    
+% % \begin{figure}[H]
+% %     \centering
+% %     \includegraphics[scale=0.4]{image_LA/i5.png}
+% %     \caption{Tách tập Train và Test}
+% % \end{figure}
+% % \end{frame}
+
+% % \begin{frame}{Kết quả}    
+% % \begin{figure}[H]
+% %     \centering
+% %     \includegraphics[scale=0.4]{image_LA/i6.png}
+% %     \caption{Kết quả dự đoán lượng sản phẩm 4 quý tiếp theo}
+% % \end{figure}
+% % \end{frame}
+% % \begin{frame}{Kết quả}    
+% % \begin{figure}[H]
+% %     \centering
+% %     \includegraphics[scale=0.4]{image_LA/i7.png}
+% %     \caption{Biểu đồ lượng sản phẩm 4 quý tiếp theo}
+% % \end{figure}
+% % \end{frame}
+
+% % \begin{frame}{Frame Title}
+% % 	\frametitle{Sai số}
+% % 	\begin{table}[H]
+% %     \begin{center}
+% %     \centering
+% % 	\begin{tabular}{ | c|| c |} 
+% % 		\hline
+% % 		& RMSE \\ 
+% % 		\hline\hline 
+% % 		LSTM &  2.58 \\
+% % 		\hline
+% % 		\hline
+% % 	\end{tabular}
+% % 	\caption{Kết quả các chỉ số đánh giá mô hình}
+% %     \end{center}
+% %     \end{table}
+% % 	\end{frame}
+% % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % \begin{frame}{Mô hình LSTM}
+    
+% % \begin{figure}[H]
+% %     \centering
+% %     \includegraphics[scale=0.5]{Img_LSTM/LSTM_XuLyDuLieu.PNG}
+% %     \caption{Xử lý dữ liệu đầu vào}
+% % \end{figure}
+% % \end{frame}
+    
+% % \begin{frame}{Mô hình LSTM}
+    
+% %     \begin{figure}[H]
+% %     \centering
+% %     \includegraphics[scale=0.3]{Figures/mohinh.jpg}
+% %     \caption{Mô hình LSTM}
+% %     \end{figure}
+% % \end{frame}
+
+% % \begin{frame}{Chạy mô hình}
+    
+% %          \begin{figure}[H]
+% %     \centering
+% %     \includegraphics[scale=0.5]{Img_LSTM/Training.png}
+
+% %     \end{figure}
+% % \end{frame}
 
 
-\section{RESULTS}
-
-\lipsum[1]
-
-
-\section{DISCUSSION}
-
-\lipsum[1]
-
-
-\section{CONCLUSION}
-
-\lipsum[1]
+ 
+    
+% %     \begin{frame}{Frame Title}
+% % 	\frametitle{Kết quả}
+% %     \begin{figure}[H]
+% %     \centering
+% %     \includegraphics[scale=0.6]{Img_LSTM/SL_Train.png}
+% %     \caption{Mô hình LSTM dự đoán giá trị số lượng tập train}
+% %     \end{figure}       
+% % 	\end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\renewcommand{\refname}{REFERENCES}
-\bibliographystyle{plain}
-\bibliography{References}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
-\section{EXAMPLE \LaTeX}
+ 
+% %     \begin{frame}{Frame Title}
+% % 	\frametitle{Kết quả}
+% %     \begin{figure}[H]
+% %     \centering
+% %     \includegraphics[scale=0.6]{Img_LSTM/SL_Test.png}
+% %     \caption{Mô hình LSTM dự đoán giá trị số lượng ở tập test}
+% %     \end{figure}       
+% % 	\end{frame}
 
-\lipsum[1]
+% %  \begin{frame}{Frame Title}
+% % 	\frametitle{Kết quả}
+% %     \begin{figure}[H]
+% %     \centering
+% %     \includegraphics[scale=0.6]{Img_LSTM/SL_Pred.png}
+% %     \caption{Dự đoán trong 8 quý tiếp theo}
+% %     \end{figure}       
+% % 	\end{frame}
+	
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\end{document} % Kết thúc
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     \begin{frame}{Frame Title}
+% % 	\frametitle{Sai số}
+% % 	\begin{table}[H]
+% %     \begin{center}
+% %     \centering
+% % 	\begin{tabular}{ | c|| c | c | c |} 
+% % 		\hline
+% % 		& RMSE & MAE & MAPE \\ 
+% % 		\hline\hline 
+% % 		LSTM &  184.89 & 172.9  & 3.04 \\
+% % 		\hline
+% % 		\hline
+% % 	\end{tabular}
+% % 	\caption{Kết quả các chỉ số đánh giá mô hình}
+% %     \end{center}
+% %     \end{table}
+% % 	\end{frame}
 
+% %  \begin{frame}{Frame Title}
+% % 	\frametitle{Kết quả}
+% %     \begin{figure}[H]
+% %     \centering
+% %     \includegraphics[scale=0.6]{Img_LSTM/GT_Train.png}
+% %     \caption{Mô hình LSTM dự đoán giá trị doanh thu ở tập train}
+% %     \end{figure}       
+% % 	\end{frame}
+
+
+ 
+% %     \begin{frame}{Frame Title}
+% % 	\frametitle{Kết quả}
+% %     \begin{figure}[H]
+% %     \centering
+% %     \includegraphics[scale=0.6]{Img_LSTM/GT_Test.png}
+% %     \caption{Mô hình LSTM dự đoán giá trị doanh thu ở tập test}
+% %     \end{figure}       
+% % 	\end{frame}
+
+% %  \begin{frame}{Frame Title}
+% % 	\frametitle{Kết quả}
+% %     \begin{figure}[H]
+% %     \centering
+% %     \includegraphics[scale=0.6]{Img_LSTM/GT_Pred.png}
+% %     \caption{Dự đoán trong 8 quý tiếp theo}
+% %     \end{figure}       
+% % 	\end{frame}
+	
+
+% %     \begin{frame}{Frame Title}
+% % 	\frametitle{Sai số}
+% % 	\begin{table}[H]
+% %     \begin{center}
+% %     \centering
+% % 	\begin{tabular}{ | c|| c | c | c |} 
+% % 		\hline
+% % 		& RMSE & MAE & MAPE \\ 
+% % 		\hline\hline 
+% % 		LSTM &  293.89 & 15.79  & 2.88 \\
+% % 		\hline
+% % 		\hline
+% % 	\end{tabular}
+% % 	\caption{Kết quả các chỉ số đánh giá mô hình}
+% %     \end{center}
+% %     \end{table}
+% % 	\end{frame}
+% % 	\section{Kết luận}
+% % 	\begin{frame}{Những điều đã làm được}
+% % 	    Trong phạm vi nội dung của đồ án, một số nội dung mà nhóm chúng em đã đạt được:
+% % \begin{itemize}
+% %     \item Tự xây dựng được mô hình học máy để dự báo giá trị chỉ số doanh thu. 
+% %     \item Ứng dụng được vào bài toán dự báo chỉ số doanh thu bán hàng.
+
+% % \end{itemize}
+% % 	\end{frame}
+% % 	\begin{frame}{Các hướng phát triển tiếp của đồ án}
+% % 	    Với những kết quả đạt được, đồ án có nhiều tiềm năng ứng dụng trong nhiều bài toán khác nhau về chuỗi thời gian. Một số hướng phát triển tiếp theo của đồ án mô học:
+% % \begin{itemize}
+% %     \item Cải thiện độ chính xác của mô hình và ứng dụng vào nhiều lĩnh vực khác nhau, ví dụ: dự báo tỉ lệ khách hàng, dự đoán doanh số bán hàng, v.v...
+% %     \item Phát triển dự báo doanh số dựa trên các trường dữ liệu có quan hệ chặt với nhau bằng mô hình LSTM đa biến.
+% %     \item Cải thiện mô hình có tốc độ hội tụ nhanh hơn và tối ưu hơn.
+
+% % \end{itemize}
+% % 	\end{frame}
+
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \end{footnotesize}
+% \begin{frame}{}
+% \centering
+%     \Huge{Thanks for listening!}
+% \end{frame}
+%   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+% % \bibliographystyle{plain}
+% % \bibliography{References.bib}   
+
+
+% \end{document}
+%   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
